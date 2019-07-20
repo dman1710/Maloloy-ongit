@@ -30,8 +30,8 @@
 		
     }
 	
-	public function update(){
-			$sql = "UPDATE  tableuser SET name='joseph arnie' WHERE id=1";
+	public function update($id){
+			$sql = "UPDATE  tableuser SET name = 'joseph arnie' WHERE id = $id";
 			if($this->dbObj->execute($sql)){
 				return true;
 				
@@ -42,8 +42,8 @@
 	
 	
 	
-	public function delete(){
-			$sql = "DELETE FROM tableuser WHERE id = 1";
+	public function delete($id){
+			$sql = "DELETE FROM tableuser WHERE id = $id";
 			if($this->dbObj->execute($sql)){
 				return true;
 				

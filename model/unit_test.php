@@ -4,7 +4,7 @@
 
 	$model = new UserModel();
 	
-	$model->name = "Joseph";
+	$model->name = "libran";
 	$model->lastname = "Maloy";
 	$model->age = "20";
 	$model->username = "jojo123";
@@ -16,17 +16,16 @@
 	
 	//updating record
 	//echo "Test case result#2:";
-	//var_dump($model->update());
+	//var_dump($model->update(2));
 	
 	//Read All record
-	//echo "Test case result#3:";
-	//var_dump($model->());
-	
+	echo "Test case result#3:";
+	var_dump($model->readAll());
 	
 	
 	//Delete record
 	//echo "Test case result#4:";
-	//var_dump($model->delete());
+	//var_dump($model->delete(2));
 	
 	
 	
@@ -34,13 +33,13 @@
 	
 	//updating record with a non-existing ID
 	//echo "Test case result#6:";
-	//var_dump($model->update());
+	//var_dump($model->update('t'));
 	
-	
+
 	
 	//Deleting record with a non-existing ID
-	echo "Test case result#7:";
-	var_dump($model->delete());
+	//echo "Test case result#7:";
+	//var_dump($model->delete('t'));
 	
 	
 ?>
